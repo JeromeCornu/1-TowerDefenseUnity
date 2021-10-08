@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 325498459172079717}
   - component: {fileID: 5522472682043018166}
   - component: {fileID: 6673357769443761396}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6531175631376730825}
   - component: {fileID: 3794962800708599297}
-  m_Layer: 0
+  - component: {fileID: 2074903803032360604}
+  m_Layer: 2
   m_Name: CanonOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,6 +173,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8350d56abbe29b5408440a69b6a7de57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fire: 0
+--- !u!135 &2074903803032360604
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777482241094054915}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 9.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3767129725784147257
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,8 +293,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 243858640020446340}
-  - component: {fileID: 566087300844853567}
-  m_Layer: 0
+  - component: {fileID: 8527302101892381994}
+  m_Layer: 2
   m_Name: CanonEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,22 +309,23 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6020859108141942912}
   m_LocalRotation: {x: -0.49999854, y: 0.5, z: 0.5, w: 0.5000015}
-  m_LocalPosition: {x: 0.024060214, y: 1.0094631, z: -0.004992187}
+  m_LocalPosition: {x: 0.02, y: 1.219, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1.8730358}
   m_Children: []
   m_Father: {fileID: 1161657351375766103}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &566087300844853567
+--- !u!114 &8527302101892381994
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6020859108141942912}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45984ea0032894c4585e49f82b4ab2cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
+  bulletPrefab: {fileID: 7415678258460362199, guid: a1a658e7e7a92ec459c78026fc0ec246, type: 3}
+  timer: 0.2

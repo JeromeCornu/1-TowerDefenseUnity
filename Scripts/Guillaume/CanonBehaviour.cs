@@ -6,32 +6,44 @@ public class CanonBehaviour : MonoBehaviour
 {
     private GameObject enemy;
     private Rigidbody enemyRb;
+    private Transform target;
+    public bool fire = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        enemy = GameObject.FindGameObjectWithTag("Enemy");
-        enemyRb = enemy.GetComponent<Rigidbody>();
+       // enemy = GameObject.FindGameObjectWithTag("Enemy");
+        //enemyRb = enemy.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindGameObjectWithTag("Enemy"))
-            transform.LookAt(predictedPosition(enemy.transform.position, transform.position, enemyRb.velocity, 50.8315f));
+        //print(fire);   
+        if (fire)
+            transform.LookAt(target);
     }
 
-    private Vector3 predictedPosition(Vector3 targetPosition, Vector3 shooterPosition, Vector3 targetVelocity, float projectileSpeed)
+    private void OnTriggerEnter(Collider other)
     {
-        Vector3 displacement = targetPosition - shooterPosition;
-        float targetMoveAngle = Vector3.Angle(-displacement, targetVelocity) * Mathf.Deg2Rad;
-        //if the target is stopping or if it is impossible for the projectile to catch up with the target (Sine Formula)
-        if (targetVelocity.magnitude == 0 || targetVelocity.magnitude > projectileSpeed && Mathf.Sin(targetMoveAngle) / projectileSpeed > Mathf.Cos(targetMoveAngle) / targetVelocity.magnitude)
+        //print(other.name);
+        if (other.tag == "Enemy" && fire == false)
         {
-            //Debug.Log("Position prediction is not feasible.");
-            return targetPosition;
+            enemyRb = other.GetComponentInParent<Rigidbody>();
+            enemy = enemyRb.gameObject;
+            target = enemy.GetComponentInChildren<Transform>();
+            fire = true;
         }
-        //also Sine Formula
-        float shootAngle = Mathf.Asin(Mathf.Sin(targetMoveAngle) * targetVelocity.magnitude / projectileSpeed);
-        return targetPosition + targetVelocity * displacement.magnitude / Mathf.Sin(Mathf.PI - targetMoveAngle - shootAngle) * Mathf.Sin(shootAngle) / targetVelocity.magnitude;
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Enemy" && fire == true)
+        {
+            enemy = null;
+            enemyRb = null;
+            target = null;
+            fire = false;
+        }
+    }
+
 }

@@ -7,19 +7,26 @@ public class bulletSpawner : MonoBehaviour
     public GameObject bulletPrefab;
     private GameObject BulletParent;
     public float timer = 0.2f;
+    private GameObject target;
+    private bool fire;
+    private GameObject turet;
 
     // Start is called before the first frame update
     void Start()
     {
+        
         BulletParent = new GameObject();
-        BulletParent.name = "BulletParent";
+        if (GameObject.Find("BulletParent") == null)
+            BulletParent.name = "BulletParent";
     }
 
     // Update is called once per frame
     void Update()
     {
+        //print(fire);
+        fire = GetComponentInParent<CanonBehaviour>().fire;
         timer -= Time.deltaTime;
-        if(timer <= 0)
+        if(timer <= 0 && fire == true)
         {
             GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation, this.transform);
             bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 2600);
@@ -43,6 +50,7 @@ public class bulletSpawner : MonoBehaviour
         float shootAngle = Mathf.Asin(Mathf.Sin(targetMoveAngle) * targetVelocity.magnitude / projectileSpeed);
         return targetPosition + targetVelocity * displacement.magnitude / Mathf.Sin(Mathf.PI - targetMoveAngle - shootAngle) * Mathf.Sin(shootAngle) / targetVelocity.magnitude;
     }
+
 }
 
 

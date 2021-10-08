@@ -2,24 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class CameraScript : MonoBehaviour
 {
-    private Rigidbody BulletRb;
     // Start is called before the first frame update
     void Start()
     {
-        BulletRb = this.GetComponent<Rigidbody>();
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        Destroy(gameObject);
+        transform.Translate(Vector3.right * Input.GetAxis("Horizontal") * 0.02f);
+        transform.Translate(Vector3.forward * Input.GetAxis("Vertical") * 0.02f, Space.World);
     }
 }
