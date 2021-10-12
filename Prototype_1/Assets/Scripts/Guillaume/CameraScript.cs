@@ -54,7 +54,7 @@ public class CameraScript : MonoBehaviour
             velocity += -transform.forward;
         if (Input.GetAxis("Vertical") > 0)
             velocity += transform.forward;
-        RaycastHit hit;
+
         if (Physics.Raycast(transform.position, velocity, 1f))
             Stop = true;
         else
