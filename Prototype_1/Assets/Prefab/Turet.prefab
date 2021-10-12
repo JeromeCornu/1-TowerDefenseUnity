@@ -137,8 +137,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6531175631376730825}
+  - component: {fileID: 3794962800708599297}
   - component: {fileID: 2074903803032360604}
-  - component: {fileID: 1999707978670188556}
   m_Layer: 2
   m_Name: CanonOrigin
   m_TagString: Untagged
@@ -161,6 +161,19 @@ Transform:
   m_Father: {fileID: 4858437557562397703}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3794962800708599297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777482241094054915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8350d56abbe29b5408440a69b6a7de57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fire: 0
 --- !u!135 &2074903803032360604
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -174,19 +187,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 9.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1999707978670188556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777482241094054915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08f1b7f4703afdc4fb03d0439bcce138, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fire: 0
 --- !u!1 &3767129725784147257
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,8 +324,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6020859108141942912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cd58b1d434644d4a8623b9b09456218, type: 3}
+  m_Script: {fileID: 11500000, guid: 45984ea0032894c4585e49f82b4ab2cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 7415678258460362199, guid: b5e507b95e258084fab4b619e0daaa0a, type: 3}
+  bulletPrefab: {fileID: 7415678258460362199, guid: a1a658e7e7a92ec459c78026fc0ec246, type: 3}
   timer: 0.2

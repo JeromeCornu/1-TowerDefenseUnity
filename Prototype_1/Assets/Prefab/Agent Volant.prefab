@@ -13,8 +13,8 @@ GameObject:
   m_Name: GameObject
   m_TagString: Enemy
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6982799111991774361
 Transform:
@@ -47,8 +47,8 @@ GameObject:
   m_Name: Capsule
   m_TagString: Enemy
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8179255859079994739
 Transform:
@@ -144,8 +144,8 @@ GameObject:
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8211632190026836045
 Transform:
@@ -240,7 +240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3124674092798815901, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6355883
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 3124674092798815901, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
       propertyPath: m_LocalPosition.x
@@ -284,11 +284,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7289516832525454741, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
       propertyPath: m_Speed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7289516832525454741, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
       propertyPath: m_AgentTypeID
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289516832525454741, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+      propertyPath: m_WalkableMask
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8578110194050239120, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
       propertyPath: m_Name
@@ -301,6 +305,14 @@ PrefabInstance:
     - target: {fileID: 8578110194050239120, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8578110194050239120, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8578110194050239120, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
