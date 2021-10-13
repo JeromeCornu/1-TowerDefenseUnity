@@ -67,9 +67,12 @@
     <Compile Include="Assets\Scripts\Guillaume\ClickToSpawn.cs" />
     <Compile Include="Assets\Scripts\SoundActive.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Guillaume\ClickToUpgrade.cs" />
     <Compile Include="Assets\Scripts\Guillaume\UpgradePlaceButton.cs" />
     <Compile Include="Assets\Scripts\Guillaume\uiBehaviour.cs" />
+=======
+>>>>>>> a4ba14019b14fe963e6038e08e6274076616b234
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -9,7 +9,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+<<<<<<< HEAD
     <ProjectGuid>{34B5FFC4-C672-4853-534C-EA11DE4FAC29}</ProjectGuid>
+=======
+    <ProjectGuid>{CC1BB1F9-AE5F-E456-60AE-40700EB6C5EF}</ProjectGuid>
+>>>>>>> a4ba14019b14fe963e6038e08e6274076616b234
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>NavMeshComponents</AssemblyName>
@@ -54,9 +58,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
+=======
+    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
+    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
+    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
+>>>>>>> a4ba14019b14fe963e6038e08e6274076616b234
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef" />
@@ -287,9 +297,12 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="UnityEditor.WebGL.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
+=======
+>>>>>>> a4ba14019b14fe963e6038e08e6274076616b234
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
@@ -656,11 +669,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.UI.csproj">
+<<<<<<< HEAD
       <Project>{2E921056-1A9A-AA3F-E5CD-0B1BCC4BB5FA}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{9E6F53BB-0C4A-B67F-FB63-BC72483185DA}</Project>
+=======
+      <Project>{BA9D6638-DC83-6044-8669-B198ED5FC4B1}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{5C7E1DDC-1324-B37B-B38E-B27345F00559}</Project>
+>>>>>>> a4ba14019b14fe963e6038e08e6274076616b234
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

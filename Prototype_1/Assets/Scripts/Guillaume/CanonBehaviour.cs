@@ -46,4 +46,11 @@ public class CanonBehaviour : MonoBehaviour
         }
     }
 
+    public void EnemyDown()
+    {
+        enemy = null;
+        enemyRb = null;
+        target = null;
+        fire = false;
+    }
 }
