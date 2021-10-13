@@ -1,17 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.AI;
+
 
 public class Enemy : MonoBehaviour
 {
 
-    public float health = 100;
+    private Transform goal;
+
+    [HideInInspector]
+    public float health = 100f;
     public GameObject deathEffect;
+    public GameObject HealthBarUI;
+
+    [Header("Unity Stuff")]
+    public Image healthBar;
+
+    private bool isDead = false;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        goal = GameObject.Find("Goal").GetComponent<Transform>();
 
+        NavMeshAgent agent = GetComponent<NavMeshAgent>();
+        agent.destination = goal.position;
     }
 
     // Update is called once per frame
@@ -28,16 +44,36 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void TakeDamage(float amount)
+    public void TakeDamage(float amount)
     {
         health -= amount;
 
-        if (health <= 0)
+        healthBar.fillAmount = health / 100f;
+        
+        
+        if (health <= 0 && !isDead)
         {
-            //Die();
+            Die();
+        }
+
+        if (health <= 100f)
+        {
+            HealthBarUI.SetActive(true);
         }
     }
 
-    // BRAKEYS Health ennemies https://www.youtube.com/watch?v=UKs1qO8w7qc a 5 min
+    void Die()
+    {
+        isDead = true;
+
+        //GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
+        //Destroy(effect, 5f);
+
+        //A ENLEVER LES COMM !!!
+        //GameObject killerTuret = GameObject.Find("CanonOrigin");
+        //killerTuret.GetComponent<CanonBehaviour>().EnemyDown();
+
+        Destroy(gameObject);
+    }
 
 }
