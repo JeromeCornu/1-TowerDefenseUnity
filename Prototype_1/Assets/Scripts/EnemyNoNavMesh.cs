@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
-public class Enemy : MonoBehaviour
+public class EnemyNoNavMesh : MonoBehaviour
 {
 
     private Transform goal;
@@ -23,10 +23,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        goal = GameObject.Find("Goal").GetComponent<Transform>();
 
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        agent.destination = goal.position;
     }
 
     // Update is called once per frame
