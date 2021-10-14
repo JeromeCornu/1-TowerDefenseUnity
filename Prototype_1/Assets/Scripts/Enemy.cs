@@ -69,9 +69,8 @@ public class Enemy : MonoBehaviour
         //GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
         //Destroy(effect, 5f);
 
-        //A ENLEVER LES COMM !!!
-        //GameObject killerTuret = GameObject.Find("CanonOrigin");
-        //killerTuret.GetComponent<CanonBehaviour>().EnemyDown();
+        GameObject killerTuret = GameObject.Find("CanonOrigin");
+        killerTuret.GetComponent<CanonBehaviour>().EnemyDown();
 
         Destroy(gameObject);
     }
