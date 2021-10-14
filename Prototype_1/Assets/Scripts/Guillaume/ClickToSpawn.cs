@@ -8,6 +8,7 @@ public class ClickToSpawn : MonoBehaviour
     public GameObject turet;
     public bool activated;
     GameObject NodeUI;
+    bulletSpawner selectedTuret;
     
 
     
@@ -33,14 +34,20 @@ public class ClickToSpawn : MonoBehaviour
 
                 //Debug.Log(hit.point);
                 print(hit.collider.tag);
-                if (hit.collider.tag != "Turet")
+                if (hit.collider.tag != "Turet" && hit.collider.tag != "UI")
                     Instantiate(turet, hit.point, Quaternion.identity);
-                else
+                else if (hit.collider.tag != "UI")
                 {
                     NodeUI.transform.position = hit.transform.position;
+                    selectedTuret = hit.collider.transform.Find("turet").Find("CanonOrigin").Find("canon").GetComponentInChildren<bulletSpawner>();
                 }
             }
         }
+    }
+
+    public void Upgrade()
+    {
+        selectedTuret.timer *= 0.85f;
     }
 
     private void OnMouseDown()
