@@ -57,6 +57,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 705458a9eac3ae740932e6aa33f3ca89, type: 3}
+--- !u!95 &4118706819901705635 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95640295303221614, guid: 705458a9eac3ae740932e6aa33f3ca89, type: 3}
+  m_PrefabInstance: {fileID: 4069950387660741837}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7663474712985685583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68,6 +73,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1487812067873258847, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4118706819901705635}
+    - target: {fileID: 1487812067873258847, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 100008, guid: a58aeb722e452254686f56bdc4b22c67, type: 3}
     - target: {fileID: 3124674092798815901, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
       propertyPath: m_RootOrder
       value: 0

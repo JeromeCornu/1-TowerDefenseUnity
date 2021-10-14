@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
 {
 
     private Transform goal;
+    public Animator animator;
 
     [HideInInspector]
     public float health = 100f;
@@ -65,13 +66,19 @@ public class Enemy : MonoBehaviour
     {
         isDead = true;
 
+        animator.SetTrigger("Death");
+
         //GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
         //Destroy(effect, 5f);
 
         GameObject killerTuret = GameObject.Find("CanonOrigin");
         killerTuret.GetComponent<CanonBehaviour>().EnemyDown();
 
-        Destroy(gameObject);
+        this.GetComponent<Collider>().enabled = false;
+        Destroy(GetComponent<Rigidbody>());
+        this.GetComponent<NavMeshAgent>().enabled = false;
+
+        Destroy(gameObject, 1.5F);
     }
 
 }

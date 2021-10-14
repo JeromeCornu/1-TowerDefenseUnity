@@ -41,6 +41,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 3.59
       objectReference: {fileID: 0}
+    - target: {fileID: 1487812067873258847, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 9081969245334641400}
+    - target: {fileID: 1487812067873258847, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 100008, guid: a58aeb722e452254686f56bdc4b22c67, type: 3}
     - target: {fileID: 3124674092798815901, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -218,6 +226,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bbfea6690ef7724ba495c866081f855, type: 3}
+--- !u!95 &9081969245334641400 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95380085654935804, guid: 6bbfea6690ef7724ba495c866081f855, type: 3}
+  m_PrefabInstance: {fileID: 9177062014586601988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9177573896705165762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1745552960654278, guid: 6bbfea6690ef7724ba495c866081f855, type: 3}
