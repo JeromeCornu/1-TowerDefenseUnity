@@ -26,7 +26,7 @@ public class ClickToUpgrade : MonoBehaviour
                 if (hit.transform.tag == "Turet")
                 {
                     print("cast hitting turet");
-                    hit.collider.gameObject.GetComponentInChildren<Canvas>().enabled = false;
+                    hit.collider.gameObject.GetComponentInChildren<Canvas>().enabled = true;
                 }
             }
         }

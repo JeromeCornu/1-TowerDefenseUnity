@@ -10,6 +10,7 @@ public class bulletSpawner : MonoBehaviour
     private GameObject target;
     private bool fire;
     private GameObject turet;
+    float i;
 
     // Start is called before the first frame update
     void Start()
@@ -25,14 +26,14 @@ public class bulletSpawner : MonoBehaviour
     {
         //print(fire);
         fire = GetComponentInParent<CanonBehaviour>().fire;
-        timer -= Time.deltaTime;
-        if(timer <= 0 && fire == true)
+        i -= Time.deltaTime;
+        if(i <= 0 && fire == true)
         {
             GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation, this.transform);
             bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 2600);
             bullet.transform.parent = BulletParent.transform;
             Destroy(bullet, 2f);
-            timer = 0.2f;
+            i = timer;
         }
     }
 

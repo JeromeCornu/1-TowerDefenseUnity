@@ -7,12 +7,14 @@ public class ClickToSpawn : MonoBehaviour
 {
     public GameObject turet;
     public bool activated;
+    GameObject NodeUI;
+    
 
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        NodeUI = GameObject.Find("Node UI");
     }
 
     // Update is called once per frame
@@ -30,7 +32,13 @@ public class ClickToSpawn : MonoBehaviour
                 Debug.DrawLine(ray.origin, hit.point, Color.red, 3f);
 
                 //Debug.Log(hit.point);
-                Instantiate(turet, hit.point, Quaternion.identity);
+                print(hit.collider.tag);
+                if (hit.collider.tag != "Turet")
+                    Instantiate(turet, hit.point, Quaternion.identity);
+                else
+                {
+                    NodeUI.transform.position = hit.transform.position;
+                }
             }
         }
     }
