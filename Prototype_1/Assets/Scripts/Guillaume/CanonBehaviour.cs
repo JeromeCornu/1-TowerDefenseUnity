@@ -22,9 +22,11 @@ public class CanonBehaviour : MonoBehaviour
         //print(fire);   
         if (fire)
             transform.LookAt(target);
+        if (!target)
+            EnemyDown();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay (Collider other)
     {
         //print(other.name);
         if (other.tag == "Enemy" && fire == false)
