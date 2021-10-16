@@ -22,7 +22,6 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        print(collision.collider.name);
         if(collision.gameObject.CompareTag("Enemy"))
         {
             GameObject Agent = collision.gameObject;

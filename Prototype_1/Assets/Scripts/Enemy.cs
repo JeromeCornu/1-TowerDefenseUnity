@@ -20,7 +20,6 @@ public class Enemy : MonoBehaviour
 
     private bool isDead = false;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -46,11 +45,20 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
-        health -= amount;
 
-        healthBar.fillAmount = health / 100f;
-        
-        
+        print(gameObject.name);
+
+        if (gameObject.name == "Agent Robuste(Clone)")
+        {
+            health -= amount / 2f;
+            healthBar.fillAmount = health / 100f;
+        }
+        else
+        {
+            health -= amount;
+            healthBar.fillAmount = health / 100f;
+        }
+
         if (health <= 0 && !isDead)
         {
             Die();
@@ -60,6 +68,8 @@ public class Enemy : MonoBehaviour
         {
             HealthBarUI.SetActive(true);
         }
+
+
     }
 
     void Die()
