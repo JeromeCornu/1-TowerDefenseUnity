@@ -46,8 +46,6 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float amount)
     {
 
-        print(gameObject.name);
-
         if (gameObject.name == "Agent Robuste(Clone)")
         {
             health -= amount / 2f;

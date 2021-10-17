@@ -33,7 +33,7 @@ public class ClickToSpawn : MonoBehaviour
                 Debug.DrawLine(ray.origin, hit.point, Color.red, 3f);
 
                 //Debug.Log(hit.point);
-                print(hit.collider.tag);
+
                 if (hit.collider.tag != "Turet" && hit.collider.tag != "UI")
                     Instantiate(turet, hit.point, Quaternion.identity);
                 else if (hit.collider.tag != "UI")

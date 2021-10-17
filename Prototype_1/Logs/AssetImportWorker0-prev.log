@@ -15,11 +15,11 @@ C:/Users/jerom/OneDrive/Documents/Travail/Gaming Campus/1-TowerDefenseUnity/Prot
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55440
+55475
 Successfully changed project path to: C:/Users/jerom/OneDrive/Documents/Travail/Gaming Campus/1-TowerDefenseUnity/Prototype_1
 C:/Users/jerom/OneDrive/Documents/Travail/Gaming Campus/1-TowerDefenseUnity/Prototype_1
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 34.53 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 34.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
@@ -35,74 +35,74 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001652 seconds.
+Registered in 0.001705 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 33.82 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 33.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.865 seconds
+- Completed reload, in  0.871 seconds
 Domain Reload Profiling:
-	ReloadAssembly (865ms)
-		BeginReloadAssembly (42ms)
+	ReloadAssembly (871ms)
+		BeginReloadAssembly (45ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
 		EndReloadAssembly (332ms)
-			LoadAssemblies (40ms)
+			LoadAssemblies (43ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (117ms)
+			SetupTypeCache (120ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (132ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (131ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (34ms)
-				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (64ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				BeforeProcessingInitializeOnLoad (6ms)
+				ProcessInitializeOnLoadAttributes (66ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002294 seconds.
+Registered in 0.002635 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.793 seconds
+- Completed reload, in  0.813 seconds
 Domain Reload Profiling:
-	ReloadAssembly (793ms)
-		BeginReloadAssembly (118ms)
+	ReloadAssembly (814ms)
+		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (623ms)
-			LoadAssemblies (65ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (638ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (213ms)
+			SetupTypeCache (224ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (233ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (230ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (43ms)
-				ProcessInitializeOnLoadAttributes (176ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (167ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
@@ -117,7 +117,7 @@ System memory in use before: 85.8 MB.
 System memory in use after: 85.9 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2006.
-Total: 2.601400 ms (FindLiveObjects: 0.142100 ms CreateObjectMapping: 0.037400 ms MarkObjects: 2.345200 ms  DeleteObjects: 0.075500 ms)
+Total: 2.597600 ms (FindLiveObjects: 0.158100 ms CreateObjectMapping: 0.035100 ms MarkObjects: 2.337500 ms  DeleteObjects: 0.066000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,8 +131,713 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Characters/Mini Legion Footman PBR HP Polyart
-  artifactKey: Guid(5462a9327aa365d439b3c91ead722f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mini Legion Footman PBR HP Polyart using Guid(5462a9327aa365d439b3c91ead722f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3304c3c0032421dc6ac82c2f3e0f62b8') in 0.009452 seconds 
-  Import took 0.011928 seconds .
+  path: Assets/RPGStarterStylizedWeaponPack/Prefabs/Axe01Low.prefab
+  artifactKey: Guid(bc85558a8f4ae1041a0278eb7c8a0b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPGStarterStylizedWeaponPack/Prefabs/Axe01Low.prefab using Guid(bc85558a8f4ae1041a0278eb7c8a0b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a52528bc4df5427619274e33314cdd87') in 0.113444 seconds 
+  Import took 0.116037 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Banner.fbx
+  artifactKey: Guid(e39e06361713b104b958ce0e06e7744e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Banner.fbx using Guid(e39e06361713b104b958ce0e06e7744e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd17b176c320f340a03dd174d0aeea01') in 0.070180 seconds 
+  Import took 0.072469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/RPGStarterStylizedWeaponPack/Prefabs/ArrowLow.prefab
+  artifactKey: Guid(b1c293957d2d7e74c8449be51e018e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPGStarterStylizedWeaponPack/Prefabs/ArrowLow.prefab using Guid(b1c293957d2d7e74c8449be51e018e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6808ab86de0a1300385c6561a72ac10b') in 0.016277 seconds 
+  Import took 0.018980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/RPGStarterStylizedWeaponPack/Prefabs/BallWeapon.prefab
+  artifactKey: Guid(218647923448eea40ae02eed040d152e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPGStarterStylizedWeaponPack/Prefabs/BallWeapon.prefab using Guid(218647923448eea40ae02eed040d152e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ffcaa47b0043952778ebd831f0b6656') in 0.037766 seconds 
+  Import took 0.040368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Barricade1.prefab
+  artifactKey: Guid(9e9dade67ca4ddb468dda65f8fae0fa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Barricade1.prefab using Guid(9e9dade67ca4ddb468dda65f8fae0fa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '182b8329f5dbe305e86d1376667c0b7e') in 0.128644 seconds 
+  Import took 0.131174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Barrier2.fbx
+  artifactKey: Guid(fab90231770faff49a318948ba45cdbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Barrier2.fbx using Guid(fab90231770faff49a318948ba45cdbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '373e9379c7d23f6dc331226cb65a57b0') in 0.029664 seconds 
+  Import took 0.032058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Barrier4.fbx
+  artifactKey: Guid(cf18a52d736a1d54397725b750e139f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Barrier4.fbx using Guid(cf18a52d736a1d54397725b750e139f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '423257f200fe72286e4be6fa8401240d') in 0.029044 seconds 
+  Import took 0.031342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Barrier3.fbx
+  artifactKey: Guid(750576abfaf574543bb4fd7e01be4fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Barrier3.fbx using Guid(750576abfaf574543bb4fd7e01be4fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcba4f66b6181b696434bab4332d2726') in 0.028424 seconds 
+  Import took 0.030698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Barrier3.prefab
+  artifactKey: Guid(c028736ef4b5bc14c90f2813ab58e63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Barrier3.prefab using Guid(c028736ef4b5bc14c90f2813ab58e63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca439397bd10a0574bd3fa97f959edb7') in 0.011080 seconds 
+  Import took 0.013779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Block2.fbx
+  artifactKey: Guid(d13f429fece0ffb43b22ac1c0f83e4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Block2.fbx using Guid(d13f429fece0ffb43b22ac1c0f83e4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '749b08590203406ada842bb7e98be2bb') in 0.126720 seconds 
+  Import took 0.129043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Block3.fbx
+  artifactKey: Guid(62b748836437fbc46b85e8735bd5b924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Block3.fbx using Guid(62b748836437fbc46b85e8735bd5b924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be92c93aebd85f333a47ca991f52811') in 0.034949 seconds 
+  Import took 0.037230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bones_01.fbx
+  artifactKey: Guid(dad2277ca286251458ed2137c4ed7a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bones_01.fbx using Guid(dad2277ca286251458ed2137c4ed7a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c95b04e6cef1a3d91cee78a2f37b75') in 0.038306 seconds 
+  Import took 0.040655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bones_02.fbx
+  artifactKey: Guid(04b580e130b852e4b8369b74bb9236db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bones_02.fbx using Guid(04b580e130b852e4b8369b74bb9236db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b7ee5e63eb0bb8744e3a876cf913341') in 0.031700 seconds 
+  Import took 0.034637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Block3.prefab
+  artifactKey: Guid(92eb8a60fd2d5144ebc52fd010dd4643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Block3.prefab using Guid(92eb8a60fd2d5144ebc52fd010dd4643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f9fe2471075f68d902adccb5f6e9c1b') in 0.014530 seconds 
+  Import took 0.016909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Barrier4.prefab
+  artifactKey: Guid(6ecbe4b744e5b7b4d8fda9548b86d702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Barrier4.prefab using Guid(6ecbe4b744e5b7b4d8fda9548b86d702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f9b9f47269e0f9d7ae41b48a2733994') in 0.011126 seconds 
+  Import took 0.013415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bones_04.fbx
+  artifactKey: Guid(29da870415fdea8498b080c0dcb1487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bones_04.fbx using Guid(29da870415fdea8498b080c0dcb1487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb7f0fcd020d8326811a6418da0e5634') in 0.027850 seconds 
+  Import took 0.030112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bones_04.prefab
+  artifactKey: Guid(8ebd5a04bbc6b444aacdd6e208d15329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bones_04.prefab using Guid(8ebd5a04bbc6b444aacdd6e208d15329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df278f6eeff8cfc7d8145bea4fb63758') in 0.009733 seconds 
+  Import took 0.012022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bones_03.fbx
+  artifactKey: Guid(06989a3d54507d44ea099150164c151a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bones_03.fbx using Guid(06989a3d54507d44ea099150164c151a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d583769d6c956da681fd12638963a2') in 0.028717 seconds 
+  Import took 0.030991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Brickwall2.fbx
+  artifactKey: Guid(008a0fb727893594a8366498c7e40317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Brickwall2.fbx using Guid(008a0fb727893594a8366498c7e40317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a57abecedbb613174f02a763e50be3a') in 0.030045 seconds 
+  Import took 0.032469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Brickwall_debris1.fbx
+  artifactKey: Guid(11d85b7738754244d821978a16667ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Brickwall_debris1.fbx using Guid(11d85b7738754244d821978a16667ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c7440625645607d8a58e384ab3a3f11') in 0.030757 seconds 
+  Import took 0.033326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Brickwall_debris2.fbx
+  artifactKey: Guid(4aa9e2e91670d4f43973acf82f458ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Brickwall_debris2.fbx using Guid(4aa9e2e91670d4f43973acf82f458ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a856955366256b1c244905333f287af') in 0.029846 seconds 
+  Import took 0.032247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_01.fbx
+  artifactKey: Guid(71acb151f663c664d95cc334f0a4661d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_01.fbx using Guid(71acb151f663c664d95cc334f0a4661d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdd8444257a7bef40bedcd67401b243a') in 0.142503 seconds 
+  Import took 0.144971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_06.fbx
+  artifactKey: Guid(1ebd925177bc0144dbd6aec48601052c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_06.fbx using Guid(1ebd925177bc0144dbd6aec48601052c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b55f03b670bab33d51f674b465c40293') in 0.030361 seconds 
+  Import took 0.032693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_Particles/Campfire_particle.prefab
+  artifactKey: Guid(09129c9be4885334bb094bdc6b42af01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_Particles/Campfire_particle.prefab using Guid(09129c9be4885334bb094bdc6b42af01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '308f2f0e05738be6d28bdc483a1e25ba') in 0.051566 seconds 
+  Import took 0.054258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Column2.prefab
+  artifactKey: Guid(9facb15d13b170d49aac481a28d98982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Column2.prefab using Guid(9facb15d13b170d49aac481a28d98982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6320047f6c7cf2ba8b8e17ca186572') in 0.029354 seconds 
+  Import took 0.031929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bush_thorned1.prefab
+  artifactKey: Guid(17d16c47d3f94e84eb373f4e67dc84c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bush_thorned1.prefab using Guid(17d16c47d3f94e84eb373f4e67dc84c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddd3d4a6765faf1d057925b765074db0') in 0.032698 seconds 
+  Import took 0.035038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bush_05.prefab
+  artifactKey: Guid(b3e46ff5b41c5cd4984b42de9313e9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bush_05.prefab using Guid(b3e46ff5b41c5cd4984b42de9313e9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc2436b29cf1a88fc0de694ae373a0a2') in 0.027785 seconds 
+  Import took 0.030130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Brickwall3.prefab
+  artifactKey: Guid(f210c06d6b879cf458a4addb67784415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Brickwall3.prefab using Guid(f210c06d6b879cf458a4addb67784415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdf049ec426d7fc89d611ce95dcaf177') in 0.043680 seconds 
+  Import took 0.046155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Brickwall_debris1.prefab
+  artifactKey: Guid(837a87df7f8e6d64caa0919c2fe30e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Brickwall_debris1.prefab using Guid(837a87df7f8e6d64caa0919c2fe30e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63a14a4042bc50bbace49a8ec5cb9959') in 0.014212 seconds 
+  Import took 0.016546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bush_06.prefab
+  artifactKey: Guid(489889d61c0cab44a834ac85bb9bed99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bush_06.prefab using Guid(489889d61c0cab44a834ac85bb9bed99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be2ec4a5c70225b1a68a2d78e577b4e9') in 0.013630 seconds 
+  Import took 0.016450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Column3C.prefab
+  artifactKey: Guid(11c9a7d64617e6f4a851d4d467d67d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Column3C.prefab using Guid(11c9a7d64617e6f4a851d4d467d67d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e37956cf1b58fa9fb252dda5a7204427') in 0.029807 seconds 
+  Import took 0.034229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Crystal2.prefab
+  artifactKey: Guid(f8782c2ba3a6875438cd978bf991f94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Crystal2.prefab using Guid(f8782c2ba3a6875438cd978bf991f94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '143007fcb51d5a64c1b572a1615e610d') in 0.036325 seconds 
+  Import took 0.039357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Brickwall3.fbx
+  artifactKey: Guid(2ecee029e96afef46acd890a8e9a23db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Brickwall3.fbx using Guid(2ecee029e96afef46acd890a8e9a23db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73ff14795a02b375c1c25bd0c3fb761a') in 0.017305 seconds 
+  Import took 0.019654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Crystal1.fbx
+  artifactKey: Guid(d0f812ebd54ac104da1b6f851fccc912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Crystal1.fbx using Guid(d0f812ebd54ac104da1b6f851fccc912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cae410bff43232e9cc152d89bf7c2334') in 0.030867 seconds 
+  Import took 0.033194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_04.fbx
+  artifactKey: Guid(bf35444f2665c5641adb14b78d1d851e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_04.fbx using Guid(bf35444f2665c5641adb14b78d1d851e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1daa498d605713620f8bc4d6a9cbb9c1') in 0.030720 seconds 
+  Import took 0.033045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Column3A.prefab
+  artifactKey: Guid(fab7a0968f3f01241af2ca4974eb6c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Column3A.prefab using Guid(fab7a0968f3f01241af2ca4974eb6c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fcd9079a9d84c37a39533e93970df90') in 0.027778 seconds 
+  Import took 0.030130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bones_05.prefab
+  artifactKey: Guid(1f2566c26432c7748b3367933137fc52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bones_05.prefab using Guid(1f2566c26432c7748b3367933137fc52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ed737734230bdeda3e161ad16eba42e') in 0.025135 seconds 
+  Import took 0.027590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Banner.prefab
+  artifactKey: Guid(ae1bfaed41d170647b31864257fe8702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Banner.prefab using Guid(ae1bfaed41d170647b31864257fe8702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db4e9d7705f037f558b849433a7e98a') in 0.010772 seconds 
+  Import took 0.013198 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_05.fbx
+  artifactKey: Guid(7eac63b18f8e41e45bc2d8f2486672ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_05.fbx using Guid(7eac63b18f8e41e45bc2d8f2486672ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '588372fc2d766fa58a4418cbc9f19515') in 0.016586 seconds 
+  Import took 0.018929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_08.fbx
+  artifactKey: Guid(f712748788a4b844ab3572f1a81cc26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_08.fbx using Guid(f712748788a4b844ab3572f1a81cc26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c59864050269d5865e99aa096a39890c') in 0.038864 seconds 
+  Import took 0.041345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Brickwall4.prefab
+  artifactKey: Guid(75cdc1fcd3ab5134eac12c60beebbbf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Brickwall4.prefab using Guid(75cdc1fcd3ab5134eac12c60beebbbf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a17b88721ff6f2e32061770143c6ace') in 0.028581 seconds 
+  Import took 0.030942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Block2.prefab
+  artifactKey: Guid(894d5b133cac3984ca368629ab355a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Block2.prefab using Guid(894d5b133cac3984ca368629ab355a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a0ad2124ea514d1693dd8db8d6b11ea') in 0.012855 seconds 
+  Import took 0.015317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bones_02.prefab
+  artifactKey: Guid(2ebe3baa81c14e643af5e086b08caca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bones_02.prefab using Guid(2ebe3baa81c14e643af5e086b08caca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dba918350dd9eb9abcc047a7ce17d37') in 0.010458 seconds 
+  Import took 0.012796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bones_05.fbx
+  artifactKey: Guid(3b4db6d88d1901b43a6108276de85389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bones_05.fbx using Guid(3b4db6d88d1901b43a6108276de85389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa8b005dc72426f6761ed8a465d4301b') in 0.014437 seconds 
+  Import took 0.016797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Column3B.fbx
+  artifactKey: Guid(846a3ff14aac26f4ba9cced37e027664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Column3B.fbx using Guid(846a3ff14aac26f4ba9cced37e027664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b4b99cfd3d7440530af453dce74affe') in 0.032565 seconds 
+  Import took 0.035339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/RPGStarterStylizedWeaponPack/Prefabs/Bow01Low.prefab
+  artifactKey: Guid(dd87da2630f334642ae1947503232524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPGStarterStylizedWeaponPack/Prefabs/Bow01Low.prefab using Guid(dd87da2630f334642ae1947503232524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17a2f1907f284664538d4d01dcc29558') in 0.194073 seconds 
+  Import took 0.196441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bones_03.prefab
+  artifactKey: Guid(9a22aa7c80de74f49aefa26b1f7d5ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bones_03.prefab using Guid(9a22aa7c80de74f49aefa26b1f7d5ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c909ec4b0c12a8572c7d60473fdcdbfb') in 0.010856 seconds 
+  Import took 0.013510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Brickwall1.prefab
+  artifactKey: Guid(dff8285982e43174caf6caf1bbccdc46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Brickwall1.prefab using Guid(dff8285982e43174caf6caf1bbccdc46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16faf515a8283bfab0330d940c2d4dc') in 0.032213 seconds 
+  Import took 0.034811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Brickwall_debris2.prefab
+  artifactKey: Guid(90824036e7d108b49b5cd5bd6effef58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Brickwall_debris2.prefab using Guid(90824036e7d108b49b5cd5bd6effef58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f408206a881696c089213955124ea508') in 0.013583 seconds 
+  Import took 0.016515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Brickwall4.fbx
+  artifactKey: Guid(fde2be8dfbc826a49973813b23d49568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Brickwall4.fbx using Guid(fde2be8dfbc826a49973813b23d49568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7188e86f7a0276165ba2f447d31eef02') in 0.018082 seconds 
+  Import took 0.020726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Column3C.fbx
+  artifactKey: Guid(fbc68e5145ec5124bbff135b7693072d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Column3C.fbx using Guid(fbc68e5145ec5124bbff135b7693072d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272f105a43441d196e4e3482997f7b36') in 0.016278 seconds 
+  Import took 0.019444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bush_03.prefab
+  artifactKey: Guid(82a05242721ef6643ae7c4fa68d3b969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bush_03.prefab using Guid(82a05242721ef6643ae7c4fa68d3b969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36c544e43b4e5589b9abfcfce73d32a') in 0.028313 seconds 
+  Import took 0.030764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Campfire.fbx
+  artifactKey: Guid(fa89be8341a5fa9498b703c029cf841a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Campfire.fbx using Guid(fa89be8341a5fa9498b703c029cf841a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eef8c244970fd6889c317cda0b3f582') in 0.096002 seconds 
+  Import took 0.098628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_thorned1.fbx
+  artifactKey: Guid(dba99ffb660da654394224de85d9bc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_thorned1.fbx using Guid(dba99ffb660da654394224de85d9bc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad40784b850ee0ded64a4ce24eb351e') in 0.014004 seconds 
+  Import took 0.016346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bush_01.prefab
+  artifactKey: Guid(d70c19bf6ce62aa4baf2c046c2c9e849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bush_01.prefab using Guid(d70c19bf6ce62aa4baf2c046c2c9e849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a992a0f2fd70df5c5710f01306067c5c') in 0.013455 seconds 
+  Import took 0.015872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_07.fbx
+  artifactKey: Guid(a285b2c0ea53bda40b6f23d4ebbd09ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_07.fbx using Guid(a285b2c0ea53bda40b6f23d4ebbd09ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eceeeb7578c2c3f2cf5341b3f76bdd57') in 0.030777 seconds 
+  Import took 0.033495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Brickwall1.fbx
+  artifactKey: Guid(1dbb09696c61b1a4584da131204302a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Brickwall1.fbx using Guid(1dbb09696c61b1a4584da131204302a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39c6aee7c19aee5994c6662e01e069e') in 0.016420 seconds 
+  Import took 0.019119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_03.fbx
+  artifactKey: Guid(9cf21da72b2f05c42a1ee6993fcd875e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_03.fbx using Guid(9cf21da72b2f05c42a1ee6993fcd875e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d8e4fe54bbef5a2df676e8d9f40e335') in 0.016293 seconds 
+  Import took 0.018906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_09.fbx
+  artifactKey: Guid(a77c1c17ac313574cbdbc503bdd3ee3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_09.fbx using Guid(a77c1c17ac313574cbdbc503bdd3ee3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f28a9116bce24698ba5a5899636a08e') in 0.031617 seconds 
+  Import took 0.034286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bush_09.prefab
+  artifactKey: Guid(fc4eae100fe5001449eb37e9ef21c174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bush_09.prefab using Guid(fc4eae100fe5001449eb37e9ef21c174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c571d875b1bfe56132085be511fc0ea') in 0.013828 seconds 
+  Import took 0.016518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Column3A.fbx
+  artifactKey: Guid(79a069564805ef34c88be12561d797f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Column3A.fbx using Guid(79a069564805ef34c88be12561d797f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d972acb1818047a49ebd4f091aaddc') in 0.017185 seconds 
+  Import took 0.019759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_02.fbx
+  artifactKey: Guid(6d24cb50df8cc924c98750d0b3b0a50c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Bush_02.fbx using Guid(6d24cb50df8cc924c98750d0b3b0a50c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b30748bc2f4d5f8c0cf658eee29c43f3') in 0.037151 seconds 
+  Import took 0.039550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bush_02.prefab
+  artifactKey: Guid(4fc951837d1497e42b0c1f7a31906ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bush_02.prefab using Guid(4fc951837d1497e42b0c1f7a31906ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9279a4697fbc32a346b4007d84fcff93') in 0.013871 seconds 
+  Import took 0.016173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Column1.prefab
+  artifactKey: Guid(2243d9dfdf3af444b859b68c135afced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Column1.prefab using Guid(2243d9dfdf3af444b859b68c135afced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb1c24bbc67960531ea2773a80ef555') in 0.029574 seconds 
+  Import took 0.032214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Column1.fbx
+  artifactKey: Guid(ce5b7ec0ef43b2b45913919b42ad1ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Column1.fbx using Guid(ce5b7ec0ef43b2b45913919b42ad1ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349a5d1cc0fec064a769d15edd03a048') in 0.017977 seconds 
+  Import took 0.020608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bush_07.prefab
+  artifactKey: Guid(7bcdafa0fd94fdc40b204e11344e778e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bush_07.prefab using Guid(7bcdafa0fd94fdc40b204e11344e778e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2238246ef8877b51190cdef060f716fb') in 0.013961 seconds 
+  Import took 0.016289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Block4.prefab
+  artifactKey: Guid(c4d6f39a8771c7248b47e7e2e914151d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Block4.prefab using Guid(c4d6f39a8771c7248b47e7e2e914151d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33bf8694490a8dc966410efce424ab88') in 0.028181 seconds 
+  Import took 0.030834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Brickwall2.prefab
+  artifactKey: Guid(2bf881ca1fa68584fbea20a8880898b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Brickwall2.prefab using Guid(2bf881ca1fa68584fbea20a8880898b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e56f66033afdd0451d6f0f1a302310') in 0.012566 seconds 
+  Import took 0.014975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Block4.fbx
+  artifactKey: Guid(9f70fe54a3dfeff4387ded4e06a1cead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Block4.fbx using Guid(9f70fe54a3dfeff4387ded4e06a1cead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24b0e4b9f36b0b5e685ac3f89b1e3336') in 0.017182 seconds 
+  Import took 0.019479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Column2.fbx
+  artifactKey: Guid(3d24c1d0c855f834da16f1fbb5c83df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Column2.fbx using Guid(3d24c1d0c855f834da16f1fbb5c83df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6c20dc166a38c1a68883ba0e58879c8') in 0.018135 seconds 
+  Import took 0.020564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bush_08.prefab
+  artifactKey: Guid(f4ad288090bef6845979e90bca501277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bush_08.prefab using Guid(f4ad288090bef6845979e90bca501277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1452f082114ba86aeafed0a363823361') in 0.012558 seconds 
+  Import took 0.015037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Block1.fbx
+  artifactKey: Guid(cb68c11386bdded42bd7b9efd053dae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Block1.fbx using Guid(cb68c11386bdded42bd7b9efd053dae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dff2e6b677e3fbb3301a522a9b54ade') in 0.032567 seconds 
+  Import took 0.034957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Crystal1.prefab
+  artifactKey: Guid(300949ed426d58541b43badd07eb66f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Crystal1.prefab using Guid(300949ed426d58541b43badd07eb66f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bacb840d789c9a17a970e40d9feb558') in 0.016773 seconds 
+  Import took 0.019270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bones_01.prefab
+  artifactKey: Guid(1c81daea1a67fcf4fa19ea079ab77f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bones_01.prefab using Guid(1c81daea1a67fcf4fa19ea079ab77f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84c104c85539e247d085dc4640bdf69') in 0.010504 seconds 
+  Import took 0.012894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Column3B.prefab
+  artifactKey: Guid(767490b42ef03b040859400450e9707e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Column3B.prefab using Guid(767490b42ef03b040859400450e9707e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9182413dba99e9c28ed1545bafbad297') in 0.014194 seconds 
+  Import took 0.016644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Barricade1.fbx
+  artifactKey: Guid(2691507795b81054e814344af312f96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Barricade1.fbx using Guid(2691507795b81054e814344af312f96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0bd33aae15193ed853f5347a89a928c') in 0.014423 seconds 
+  Import took 0.017289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Barrier1.prefab
+  artifactKey: Guid(145943aeed3e4bd48bc609e6a6378f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Barrier1.prefab using Guid(145943aeed3e4bd48bc609e6a6378f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caba093fa1ca3bbe035bf075ed94dbaa') in 0.026252 seconds 
+  Import took 0.028995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Models/Barrier1.fbx
+  artifactKey: Guid(d675c13cd5b439c40bab2acbaed9ae81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Models/Barrier1.fbx using Guid(d675c13cd5b439c40bab2acbaed9ae81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3548c49eb8d8f0701565b9c25f1ae9f5') in 0.013598 seconds 
+  Import took 0.016247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Block1.prefab
+  artifactKey: Guid(cd6192db1ed9f434393078734efa25e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Block1.prefab using Guid(cd6192db1ed9f434393078734efa25e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16c7a5f366eb53ab6eb9ed0516745165') in 0.013699 seconds 
+  Import took 0.016482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Bush_04.prefab
+  artifactKey: Guid(0795bf57a3062f34f912bb2e31102918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Bush_04.prefab using Guid(0795bf57a3062f34f912bb2e31102918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02891de6e0ca1b7319eeea9aca8d22a4') in 0.012982 seconds 
+  Import took 0.015470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Barrier2.prefab
+  artifactKey: Guid(27c5bf75d8925b647b190d790b90d7ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Barrier2.prefab using Guid(27c5bf75d8925b647b190d790b90d7ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9c5a1b566200bf590ec220359997d1d') in 0.012183 seconds 
+  Import took 0.014628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/MOBA and Tower Defense/Prefabs_props/Campfire.prefab
+  artifactKey: Guid(57101be5092d449418905f928b7a3227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MOBA and Tower Defense/Prefabs_props/Campfire.prefab using Guid(57101be5092d449418905f928b7a3227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1478141f5654a4a15083beb84f22d897') in 0.014066 seconds 
+  Import took 0.016832 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002519 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.743 seconds
+Domain Reload Profiling:
+	ReloadAssembly (743ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (587ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (207ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (210ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (38ms)
+				ProcessInitializeOnLoadAttributes (158ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1479 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.0 MB.
+System memory in use after: 82.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2024.
+Total: 2.577900 ms (FindLiveObjects: 0.155700 ms CreateObjectMapping: 0.037900 ms MarkObjects: 2.369500 ms  DeleteObjects: 0.013800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
