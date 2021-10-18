@@ -9,11 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-<<<<<<< HEAD
     <ProjectGuid>{ECD5856E-AB1D-075B-67DF-813F61E9253E}</ProjectGuid>
-=======
-    <ProjectGuid>{0DD1B5F2-76C1-8FC7-F09B-6B96A4ADC0A8}</ProjectGuid>
->>>>>>> a4ba14019b14fe963e6038e08e6274076616b234
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>NavMeshComponents</AssemblyName>
@@ -58,15 +54,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
-=======
-    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
-    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
-    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
->>>>>>> a4ba14019b14fe963e6038e08e6274076616b234
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef" />
@@ -618,11 +608,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.UI.csproj">
-<<<<<<< HEAD
       <Project>{9E6F53BB-0C4A-B67F-FB63-BC72483185DA}</Project>
-=======
-      <Project>{5C7E1DDC-1324-B37B-B38E-B27345F00559}</Project>
->>>>>>> a4ba14019b14fe963e6038e08e6274076616b234
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
