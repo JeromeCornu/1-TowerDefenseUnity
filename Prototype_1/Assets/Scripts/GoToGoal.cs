@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class GoToGoal : MonoBehaviour
 {
+    private GameObject GameManager;
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameManager = GameObject.Find("GameManager");
     }
 
     // Update is called once per frame
@@ -20,6 +21,8 @@ public class GoToGoal : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
+            GameManager.GetComponent<BaseHealth>().health--;
+            GameManager.GetComponent<EnemiesCount>().EneCount--;
             Destroy(other.gameObject, 1.5f);
         }
     }

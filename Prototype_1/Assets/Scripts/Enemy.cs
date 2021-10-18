@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     public float health = 100f;
     public GameObject deathEffect;
     public GameObject HealthBarUI;
-
+    private GameObject GameManager;
     [Header("Unity Stuff")]
     public Image healthBar;
 
@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour
 
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
         agent.destination = goal.position;
+
+        GameManager = GameObject.Find("GameManager");
     }
 
     // Update is called once per frame
@@ -85,6 +87,7 @@ public class Enemy : MonoBehaviour
         this.GetComponent<Collider>().enabled = false;
         Destroy(GetComponent<Rigidbody>());
         this.GetComponent<NavMeshAgent>().enabled = false;
+        GameManager.GetComponent<EnemiesCount>().EneCount--;
 
         Destroy(gameObject, 1.5F);
     }

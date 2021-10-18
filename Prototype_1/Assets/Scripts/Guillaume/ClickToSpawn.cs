@@ -21,7 +21,7 @@ public class ClickToSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && activated == true)
+        if (Input.GetButtonDown("Fire1") /*&& activated == true*/)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
