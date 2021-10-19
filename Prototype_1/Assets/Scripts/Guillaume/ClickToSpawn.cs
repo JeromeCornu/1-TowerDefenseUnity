@@ -9,6 +9,7 @@ public class ClickToSpawn : MonoBehaviour
     public bool activated;
     GameObject NodeUI;
     bulletSpawner selectedTuret;
+    private GameObject GameManager;
     
 
     
@@ -16,6 +17,7 @@ public class ClickToSpawn : MonoBehaviour
     void Start()
     {
         NodeUI = GameObject.Find("Node UI");
+        GameManager = GameObject.Find("GameManager");
     }
 
     // Update is called once per frame

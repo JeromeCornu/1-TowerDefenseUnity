@@ -7,7 +7,7 @@ public class EnemiesCount : MonoBehaviour
 {
     public int EneCount;
     public TextMeshProUGUI Ui;
-    public GameObject Img;
+    public GameObject Victory;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +20,6 @@ public class EnemiesCount : MonoBehaviour
     {
         Ui.text = EneCount.ToString();
         if (EneCount <= 0)
-            Img.SetActive(true); ;
+            Victory.SetActive(true); ;
     }
 }

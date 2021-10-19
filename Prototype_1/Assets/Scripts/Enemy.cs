@@ -88,7 +88,7 @@ public class Enemy : MonoBehaviour
         Destroy(GetComponent<Rigidbody>());
         this.GetComponent<NavMeshAgent>().enabled = false;
         GameManager.GetComponent<EnemiesCount>().EneCount--;
-
+        GameManager.GetComponent<money>().Money += 20;
         Destroy(gameObject, 1.5F);
     }
 
