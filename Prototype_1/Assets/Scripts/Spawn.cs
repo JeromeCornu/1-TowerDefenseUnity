@@ -31,7 +31,7 @@ public class Spawn : MonoBehaviour
         spawnTimer -= Time.deltaTime;
         if (i >= 0 && spawnTimer <= 0)
         {
-            var Agent = Instantiate(enemy[i], this.transform.position, Quaternion.identity);
+            var Agent = Instantiate(enemy[i], this.transform.position, this.transform.rotation);
             i--;
             spawnTimer = 1f;
         }
