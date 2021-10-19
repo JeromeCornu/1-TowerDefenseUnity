@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Turet
+  - UI
+  - TuretBase
   layers:
   - Default
   - TransparentFX

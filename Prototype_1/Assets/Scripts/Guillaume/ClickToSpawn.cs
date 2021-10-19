@@ -11,6 +11,7 @@ public class ClickToSpawn : MonoBehaviour
     GameObject selectedTuret;
     private GameObject GameManager;
     public int TuretPrice;
+    private GameObject SpawnedTuret;
     
 
     
@@ -38,10 +39,12 @@ public class ClickToSpawn : MonoBehaviour
 
                 //Debug.Log(hit.point);
 
-                if (hit.collider.tag != "Turet" && hit.collider.tag != "UI" && GameManager.GetComponent<money>().Money >= 100)
+                if (hit.collider.tag == "TuretBase" && GameManager.GetComponent<money>().Money >= TuretPrice && hit.collider.gameObject.GetComponent<TuretBase>().Tureted == false)
                 {
-                    Instantiate(turet, hit.point, Quaternion.identity);
+                    SpawnedTuret = Instantiate(turet, hit.transform.position + transform.up * 2.69f, Quaternion.identity);
+                    SpawnedTuret.GetComponent<TuretLink>().TuretBase = hit.collider.gameObject;
                     GameManager.GetComponent<money>().Money -= TuretPrice;
+                    hit.collider.gameObject.GetComponent<TuretBase>().Tureted = true;
                 }
                 else if (hit.collider.tag == "Turet")
                 {
@@ -52,6 +55,8 @@ public class ClickToSpawn : MonoBehaviour
                 else if (hit.collider.tag != "UI")
                     NodeUI.SetActive(false);
             }
+            else
+                NodeUI.SetActive(false);
         }
     }
 
@@ -71,6 +76,7 @@ public class ClickToSpawn : MonoBehaviour
 
     public void Sell()
     {
+        selectedTuret.GetComponent<TuretLink>().TuretBase.GetComponent<TuretBase>().Tureted = false;
         Destroy(selectedTuret);
         NodeUI.SetActive(false);
         GameManager.GetComponent<money>().Money += 90;
