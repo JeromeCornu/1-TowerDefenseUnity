@@ -1038,7 +1038,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8346846650606615909, guid: 875953b3317c0b44ba4e924105d6127c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8346846650606615909, guid: 875953b3317c0b44ba4e924105d6127c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1323,7 +1323,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8346846650606615909, guid: 875953b3317c0b44ba4e924105d6127c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8346846650606615909, guid: 875953b3317c0b44ba4e924105d6127c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1380,7 +1380,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8346846650606615909, guid: 875953b3317c0b44ba4e924105d6127c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8346846650606615909, guid: 875953b3317c0b44ba4e924105d6127c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1769,7 +1769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5115c20a74a8194b9bfe240a5538b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Money: 200
+  Money: 3052
   gold: {fileID: 1893965837}
 --- !u!1 &1008134741
 GameObject:
@@ -3835,7 +3835,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8346846650606615909, guid: 875953b3317c0b44ba4e924105d6127c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8346846650606615909, guid: 875953b3317c0b44ba4e924105d6127c, type: 3}
       propertyPath: m_LocalPosition.x
