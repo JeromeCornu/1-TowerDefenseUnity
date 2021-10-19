@@ -8,8 +8,9 @@ public class ClickToSpawn : MonoBehaviour
     public GameObject turet;
     public bool activated;
     GameObject NodeUI;
-    bulletSpawner selectedTuret;
+    GameObject selectedTuret;
     private GameObject GameManager;
+    public int TuretPrice;
     
 
     
@@ -18,6 +19,7 @@ public class ClickToSpawn : MonoBehaviour
     {
         NodeUI = GameObject.Find("Node UI");
         GameManager = GameObject.Find("GameManager");
+        NodeUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,25 +38,42 @@ public class ClickToSpawn : MonoBehaviour
 
                 //Debug.Log(hit.point);
 
-                if (hit.collider.tag != "Turet" && hit.collider.tag != "UI")
+                if (hit.collider.tag != "Turet" && hit.collider.tag != "UI" && GameManager.GetComponent<money>().Money >= 100)
+                {
                     Instantiate(turet, hit.point, Quaternion.identity);
-                else if (hit.collider.tag != "UI")
+                    GameManager.GetComponent<money>().Money -= TuretPrice;
+                }
+                else if (hit.collider.tag == "Turet")
                 {
                     NodeUI.transform.position = hit.transform.position;
-                    selectedTuret = hit.collider.transform.Find("turet").Find("CanonOrigin").Find("canon").GetComponentInChildren<bulletSpawner>();
+                    NodeUI.SetActive(true);
+                    selectedTuret = hit.collider.gameObject;
                 }
+                else if (hit.collider.tag != "UI")
+                    NodeUI.SetActive(false);
             }
         }
     }
 
     public void Upgrade()
     {
-        selectedTuret.timer *= 0.85f;
+        if (GameManager.GetComponent<money>().Money >= 75)
+        {
+            selectedTuret.transform.Find("turet").Find("CanonOrigin").Find("canon").GetComponentInChildren<bulletSpawner>().timer *= 0.85f;
+            GameManager.GetComponent<money>().Money -= 75;
+        }
     }
 
     private void OnMouseDown()
     {
 
+    }
+
+    public void Sell()
+    {
+        Destroy(selectedTuret);
+        NodeUI.SetActive(false);
+        GameManager.GetComponent<money>().Money += 90;
     }
 }
 
