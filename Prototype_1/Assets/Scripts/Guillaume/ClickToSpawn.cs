@@ -63,8 +63,9 @@ public class ClickToSpawn : MonoBehaviour
 
     public void Upgrade()
     {
-        if (GameManager.GetComponent<money>().Money >= 75)
+        if (GameManager.GetComponent<money>().Money >= 75 && selectedTuret.GetComponent<TuretLink>().lvl < 3)
         {
+            selectedTuret.GetComponent<TuretLink>().lvl++;
             selectedTuret.transform.Find("turet").Find("CanonOrigin").Find("canon").GetComponentInChildren<bulletSpawner>().timer *= 0.85f;
             GameManager.GetComponent<money>().Money -= 75;
         }
