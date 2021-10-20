@@ -19,6 +19,9 @@ public class BaseHealth : MonoBehaviour
     {
         HP.text = health.ToString();
         if (health <= 0)
+        {
             Defeat.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 }

@@ -20,6 +20,9 @@ public class EnemiesCount : MonoBehaviour
     {
         Ui.text = EneCount.ToString();
         if (EneCount <= 0)
-            Victory.SetActive(true); ;
+        {
+            Victory.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 }

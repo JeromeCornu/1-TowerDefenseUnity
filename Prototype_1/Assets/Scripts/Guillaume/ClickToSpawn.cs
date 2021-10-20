@@ -21,6 +21,7 @@ public class ClickToSpawn : MonoBehaviour
         NodeUI = GameObject.Find("Node UI");
         GameManager = GameObject.Find("GameManager");
         NodeUI.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
