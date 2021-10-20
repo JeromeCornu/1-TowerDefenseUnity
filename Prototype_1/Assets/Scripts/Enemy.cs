@@ -50,7 +50,7 @@ public class Enemy : MonoBehaviour
 
         if (gameObject.name == "Agent Robuste(Clone)")
         {
-            health -= amount / 2f;
+            health -= amount / 4f;
             healthBar.fillAmount = health / 100f;
         }
         else
@@ -88,7 +88,10 @@ public class Enemy : MonoBehaviour
         Destroy(GetComponent<Rigidbody>());
         this.GetComponent<NavMeshAgent>().enabled = false;
         GameManager.GetComponent<EnemiesCount>().EneCount--;
-        GameManager.GetComponent<money>().Money += 20;
+        if (gameObject.name == "Agent Robuste(Clone)")
+            GameManager.GetComponent<money>().Money += 20;
+        else
+            GameManager.GetComponent<money>().Money += 10;
         Destroy(gameObject, 1.5F);
     }
 
