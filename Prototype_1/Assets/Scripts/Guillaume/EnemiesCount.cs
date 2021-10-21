@@ -10,15 +10,16 @@ public class EnemiesCount : MonoBehaviour
     public TextMeshProUGUI Ui;
     public GameObject Victory;
     public bool win = false;
-    public GameObject GameManager;
+    private GameObject GameManager;
 
     // Start is called before the first frame update
     void Start()
     {
-
         GameManager = GameObject.Find("GameManager");
-        EneCount = GameObject.Find("Spawn").GetComponent<Spawn>().enemy.Count;
+        EneCount = GameObject.Find("GroundSpawn").GetComponent<Spawn>().enemy.Count;
         EneCount += GameObject.Find("FlyingSpawn").GetComponent<FlyingSpawn>().enemy.Count;
+        if (GameObject.Find("SpawnGauche"))
+            EneCount += GameObject.Find("SpawnGauche").GetComponent<Spawn>().enemy.Count;
         //Ui = GameObject.Find("Canvas").GetComponentInChildren<TextMeshProUGUI>();
     }
 
