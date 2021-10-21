@@ -24,6 +24,7 @@ public class BaseHealth : MonoBehaviour
             loose = true;
             SoundManager.Instance.PlaySFX("DefeatSound");
             Defeat.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }
