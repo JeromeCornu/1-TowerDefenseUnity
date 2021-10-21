@@ -189,6 +189,8 @@ GameObject:
   - component: {fileID: 8250951367312062191}
   - component: {fileID: 7289516832525454741}
   - component: {fileID: 7928852335231573987}
+  - component: {fileID: 7985444819803253206}
+  - component: {fileID: 2925924493380441612}
   m_Layer: 0
   m_Name: Agent parent
   m_TagString: Enemy
@@ -271,6 +273,40 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7985444819803253206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8578110194050239120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04a042fe2864046a1b25c3ef749108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  health: 100
+  deathEffect: {fileID: 0}
+  HealthBarUI: {fileID: 0}
+  healthBar: {fileID: 0}
+--- !u!114 &2925924493380441612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8578110194050239120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04a042fe2864046a1b25c3ef749108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  health: 100
+  deathEffect: {fileID: 100008, guid: a58aeb722e452254686f56bdc4b22c67, type: 3}
+  HealthBarUI: {fileID: 1118102052}
+  healthBar: {fileID: 5135946745769637480}
 --- !u!1 &8938872380646867360
 GameObject:
   m_ObjectHideFlags: 0
