@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &9059838457478083723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2576500008067880122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04a042fe2864046a1b25c3ef749108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 9081969245334641400}
+  health: 100
+  deathEffect: {fileID: 100008, guid: a58aeb722e452254686f56bdc4b22c67, type: 3}
+  HealthBarUI: {fileID: 6109696801496644622}
+  healthBar: {fileID: 1408655282137262146}
 --- !u!65 &6639239720195913024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -168,11 +185,32 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1697176899565931534, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+--- !u!1 &2576500008067880122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8578110194050239120, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+  m_PrefabInstance: {fileID: 6109696800382836266}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9193837327763075255 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3124674092798815901, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
   m_PrefabInstance: {fileID: 6109696800382836266}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6109696801496644622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1118102052, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+  m_PrefabInstance: {fileID: 6109696800382836266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1408655282137262146 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5135946745769637480, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+  m_PrefabInstance: {fileID: 6109696800382836266}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9177062014586601988
 PrefabInstance:
   m_ObjectHideFlags: 0

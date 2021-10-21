@@ -12,6 +12,7 @@ public class EnemiesCount : MonoBehaviour
     void Start()
     {
         EneCount = GameObject.Find("Spawn").GetComponent<Spawn>().enemy.Count;
+        EneCount += GameObject.Find("FlyingSpawn").GetComponent<FlyingSpawn>().enemy.Count;
         //Ui = GameObject.Find("Canvas").GetComponentInChildren<TextMeshProUGUI>();
     }
 

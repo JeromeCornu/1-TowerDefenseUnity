@@ -90,8 +90,6 @@ public class NewCamera : MonoBehaviour
             transform.Rotate(Vector3.up, rotateHorizontal * sensitivity, Space.World);
             transform.Rotate(Vector3.left * rotateVertical * sensitivity);
         }
-
-        print(Input.mouseScrollDelta.magnitude);
     }
 
 }
