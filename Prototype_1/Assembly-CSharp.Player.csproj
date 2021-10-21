@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,6 +53,9 @@
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Scripts\Spawn.cs" />
     <Compile Include="Assets\Scripts\Guillaume\bulletSpawner.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
@@ -67,9 +70,11 @@
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
+    <Compile Include="Assets\Scripts\SoundManagerMenu.cs" />
     <Compile Include="Assets\Scripts\Guillaume\colliderScript.cs" />
     <Compile Include="Assets\Scripts\next.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+    <Compile Include="Assets\Scripts\FlyingSpawn.cs" />
     <Compile Include="Assets\Scripts\TuretBase.cs" />
     <Compile Include="Assets\Scripts\Guillaume\CanonBehaviour.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
@@ -100,6 +105,7 @@
     <Compile Include="Assets\Scripts\BaseHealth.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs" />
+    <Compile Include="Assets\Scripts\Guillaume\NewCamera.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
@@ -125,13 +131,6 @@
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
-    <Compile Include="Assets\Scripts\SoundManagerMenu.cs" />
-    <Compile Include="Assets\Scripts\FlyingSpawn.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Scripts\SoundManagerMenu.cs" />
-=======
-    <Compile Include="Assets\Scripts\Guillaume\NewCamera.cs" />
->>>>>>> f32f5366227c40e91c6c5d4d35676b7ea23f831d
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
