@@ -49,6 +49,10 @@ PrefabInstance:
       propertyPath: deathEffect
       value: 
       objectReference: {fileID: 100008, guid: a58aeb722e452254686f56bdc4b22c67, type: 3}
+    - target: {fileID: 2925924493380441612, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 9081969245334641400}
     - target: {fileID: 3124674092798815901, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
       propertyPath: m_RootOrder
       value: 0

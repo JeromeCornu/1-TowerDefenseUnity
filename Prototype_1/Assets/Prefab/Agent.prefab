@@ -125,6 +125,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7985444819803253206, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 9500000, guid: b454e93a07770e84988e53d55b93bdb5, type: 3}
+    - target: {fileID: 7985444819803253206, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 3250664331487967271}
+    - target: {fileID: 7985444819803253206, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+      propertyPath: HealthBarUI
+      value: 
+      objectReference: {fileID: 7663474714082782315}
+    - target: {fileID: 7985444819803253206, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 100008, guid: a58aeb722e452254686f56bdc4b22c67, type: 3}
     - target: {fileID: 8578110194050239120, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
       propertyPath: m_Name
       value: Agent
@@ -136,3 +152,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3124674092798815901, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
   m_PrefabInstance: {fileID: 7663474712985685583}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7663474714082782315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1118102052, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+  m_PrefabInstance: {fileID: 7663474712985685583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3250664331487967271 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5135946745769637480, guid: d7dce340c22cd874f93151b9bc47ab18, type: 3}
+  m_PrefabInstance: {fileID: 7663474712985685583}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
