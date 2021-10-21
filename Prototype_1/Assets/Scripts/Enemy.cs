@@ -75,12 +75,24 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         isDead = true;
-        if (gameObject.name == "Agent(Clone)")
+
+        if (gameObject.name == "Agent Volant(Clone)")
         {
             Destroy(gameObject);
-            
+            SoundManager.Instance.PlaySFX("VolantDieSound");
         }
         animator.SetTrigger("Death");
+
+        if (gameObject.name == "Agent Robuste(Clone)")
+        {
+            SoundManager.Instance.PlaySFX("RobusteDieSound");
+
+        }
+        if (gameObject.name == "Agent(Clone)")
+        {
+            SoundManager.Instance.PlaySFX("SimpleDieSound");
+
+        }
 
         //GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
         //Destroy(effect, 5f);
