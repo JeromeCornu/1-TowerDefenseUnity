@@ -21,6 +21,7 @@ public class GoToGoal : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
+            SoundManager.Instance.PlaySFX("BaseHurtSound");
             GameManager.GetComponent<BaseHealth>().health--;
             GameManager.GetComponent<EnemiesCount>().EneCount--;
             Destroy(other.gameObject, 1.5f);

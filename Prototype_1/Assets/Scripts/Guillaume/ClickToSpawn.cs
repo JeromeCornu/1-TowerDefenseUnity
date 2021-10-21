@@ -42,6 +42,7 @@ public class ClickToSpawn : MonoBehaviour
 
                 if (hit.collider.tag == "TuretBase" && GameManager.GetComponent<money>().Money >= TuretPrice && hit.collider.gameObject.GetComponent<TuretBase>().Tureted == false)
                 {
+                    SoundManager.Instance.PlaySFX("BuildingSound");
                     SpawnedTuret = Instantiate(turet, hit.transform.position + transform.up * 2.69f, Quaternion.identity);
                     SpawnedTuret.GetComponent<TuretLink>().TuretBase = hit.collider.gameObject;
                     GameManager.GetComponent<money>().Money -= TuretPrice;
@@ -65,6 +66,7 @@ public class ClickToSpawn : MonoBehaviour
     {
         if (GameManager.GetComponent<money>().Money >= 75 && selectedTuret.GetComponent<TuretLink>().lvl < 3)
         {
+            SoundManager.Instance.PlaySFX("UpgradeSound");
             selectedTuret.GetComponent<TuretLink>().lvl++;
             selectedTuret.transform.Find("turet").Find("CanonOrigin").Find("canon").GetComponentInChildren<bulletSpawner>().timer *= 0.85f;
             GameManager.GetComponent<money>().Money -= 75;
@@ -78,6 +80,7 @@ public class ClickToSpawn : MonoBehaviour
 
     public void Sell()
     {
+        SoundManager.Instance.PlaySFX("SellSound");
         selectedTuret.GetComponent<TuretLink>().TuretBase.GetComponent<TuretBase>().Tureted = false;
         Destroy(selectedTuret);
         NodeUI.SetActive(false);
