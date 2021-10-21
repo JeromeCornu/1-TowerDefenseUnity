@@ -125,8 +125,9 @@
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
-    <Compile Include="Assets\Scripts\Guillaume\NewCamera.cs" />
+    <Compile Include="Assets\Scripts\SoundManagerMenu.cs" />
     <Compile Include="Assets\Scripts\FlyingSpawn.cs" />
+    <Compile Include="Assets\Scripts\Guillaume\NewCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
