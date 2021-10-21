@@ -68,7 +68,9 @@
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
     <Compile Include="Assets\Scripts\Guillaume\colliderScript.cs" />
+    <Compile Include="Assets\Scripts\next.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+    <Compile Include="Assets\Scripts\TuretBase.cs" />
     <Compile Include="Assets\Scripts\Guillaume\CanonBehaviour.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
@@ -84,6 +86,7 @@
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+    <Compile Include="Assets\Scripts\Guillaume\TuretLink.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
@@ -122,8 +125,7 @@
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
     <Compile Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
-    <Compile Include="Assets\Scripts\TuretBase.cs" />
-    <Compile Include="Assets\Scripts\Guillaume\TuretLink.cs" />
+    <Compile Include="Assets\Scripts\Guillaume\NewCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
@@ -208,6 +210,7 @@
     <None Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
     <None Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
     <None Include="Assets\MOBA and Tower Defense\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+    <None Include="Assets\SkySerie Freebie\Hdri setup.txt" />
     <None Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\MOBA and Tower Defense\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />

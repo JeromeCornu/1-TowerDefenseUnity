@@ -110,6 +110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3af3c1206d7491e40b2aa59f4ff46ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tureted: 0
+  BluePrint: {fileID: 5106398951850421534, guid: 2b008111b0be2cc46aafbc09f16cec22, type: 3}
 --- !u!1 &8346846650660394562
 GameObject:
   m_ObjectHideFlags: 0
