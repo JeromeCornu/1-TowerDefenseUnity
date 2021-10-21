@@ -24,11 +24,11 @@ public class bulletSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //print(fire);
         fire = GetComponentInParent<CanonBehaviour>().fire;
         i -= Time.deltaTime;
         if(i <= 0 && fire == true)
         {
+            SoundManager.Instance.PlaySFX("CrossbowShotSound");
             GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation, this.transform);
             bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 2600);
             bullet.transform.parent = BulletParent.transform;

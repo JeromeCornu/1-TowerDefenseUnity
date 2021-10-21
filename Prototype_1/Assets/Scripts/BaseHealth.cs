@@ -9,19 +9,21 @@ public class BaseHealth : MonoBehaviour
     public int health;
     public TextMeshProUGUI HP;
     public GameObject Defeat;
+    public bool loose = false;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         HP.text = health.ToString();
-        if (health <= 0)
+        if (health <= 0 && loose == false)
         {
+            loose = true;
+            SoundManager.Instance.PlaySFX("DefeatSound");
             Defeat.SetActive(true);
-            Time.timeScale = 0;
         }
     }
 }

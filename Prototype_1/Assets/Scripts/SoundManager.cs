@@ -6,35 +6,39 @@ using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] Slider volumeSlider;
+    public static SoundManager Instance { get; private set; }
+
+    [SerializeField] AudioSource musicSource;
+
+    [SerializeField] AudioSource sfxSource;
+
+    Dictionary<string, AudioClip> audioClips = new Dictionary<string, AudioClip>();
+
+    private void Awake()
+    {
+        if (Instance) Destroy(this);
+        else Instance = this;
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this) Instance = null;
+    }
 
     public void Start()
     {
-        if (!PlayerPrefs.HasKey("musicVolume"))
+        AudioClip[] clips = Resources.LoadAll<AudioClip>("Sfx") as AudioClip[];
+
+        foreach (AudioClip clip in clips)
         {
-            PlayerPrefs.SetFloat("musicVolume", 1);
-            Load();
-        }
-        else
-        {
-            Load();
+            audioClips.Add(clip.name, clip);
         }
     }
 
-    public void ChangeVolume()
+    // SFX
+    public void PlaySFX(string name)
     {
-        AudioListener.volume = volumeSlider.value;
-        Save();
-    }
-
-    private void Load()
-    {
-        volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
-    }
-
-    private void Save()
-    {
-        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+        sfxSource.PlayOneShot(audioClips[name]);
     }
 
 }
