@@ -16,7 +16,6 @@ public class FlyingSpawn : MonoBehaviour
     {
         listLenght = GameObject.Find("FlyingSpawn").GetComponent<FlyingSpawn>().enemy.Count;
         i = listLenght - 1;
-        print(i);
     }
 
     // Update is called once per frame
