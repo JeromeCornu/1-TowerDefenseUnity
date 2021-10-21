@@ -76,7 +76,10 @@ public class Enemy : MonoBehaviour
     {
         isDead = true;
         if (gameObject.name == "Agent(Clone)")
+        {
             Destroy(gameObject);
+            
+        }
         animator.SetTrigger("Death");
 
         //GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
