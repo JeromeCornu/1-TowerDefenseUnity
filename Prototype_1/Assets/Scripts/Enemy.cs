@@ -50,12 +50,12 @@ public class Enemy : MonoBehaviour
 
         if (gameObject.name == "Agent Robuste(Clone)")
         {
-            health -= amount / 4f;
+            health -= amount / 5f;
             healthBar.fillAmount = health / 100f;
         }
         else
         {
-            health -= amount;
+            health -= amount / 1.3f;
             healthBar.fillAmount = health / 100f;
         }
 

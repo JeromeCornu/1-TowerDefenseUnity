@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2851540815721733834}
   - component: {fileID: 2851540815721733813}
   - component: {fileID: 2851540815721733833}
+  - component: {fileID: 7006139151443260926}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -66,6 +67,7 @@ MonoBehaviour:
   EneCount: 50
   Ui: {fileID: 0}
   Victory: {fileID: 0}
+  win: 0
 --- !u!114 &2851540815721733835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +83,7 @@ MonoBehaviour:
   health: 10
   HP: {fileID: 0}
   Defeat: {fileID: 0}
+  loose: 0
 --- !u!114 &2851540815721733834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,3 +122,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6097e84a2a3af3a409337b124f779b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7006139151443260926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2851540815721733814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2286b6e111e654d88d1fa75825715f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}
