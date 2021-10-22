@@ -64,12 +64,12 @@ public class ClickToSpawn : MonoBehaviour
 
     public void Upgrade()
     {
-        if (GameManager.GetComponent<money>().Money >= 75 && selectedTuret.GetComponent<TuretLink>().lvl < 3)
+        if (GameManager.GetComponent<money>().Money >= 65 && selectedTuret.GetComponent<TuretLink>().lvl < 3)
         {
             SoundManager.Instance.PlaySFX("UpgradeSound");
             selectedTuret.GetComponent<TuretLink>().lvl++;
             selectedTuret.transform.Find("turet").Find("CanonOrigin").Find("canon").GetComponentInChildren<bulletSpawner>().timer *= 0.85f;
-            GameManager.GetComponent<money>().Money -= 75;
+            GameManager.GetComponent<money>().Money -= 65;
         }
     }
 

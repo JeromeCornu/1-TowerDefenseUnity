@@ -80,6 +80,8 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
             SoundManager.Instance.PlaySFX("VolantDieSound");
+            GameManager.GetComponent<EnemiesCount>().EneCount--;
+            return;
         }
         animator.SetTrigger("Death");
 
